@@ -1,0 +1,423 @@
+{
+  "vscode_custom_css.imports": [
+    "file:///Users/bhanu/.vscode/extensions/bhanu1776.jellyfish-retro-0.1.1/themes/Extras/JellyFish-x-NoAnim.css"
+  ],
+  "editor.fontSize": 15,
+  // "editor.rulers": [{"column":48, "color": "#73676e3c"}],
+  "explorer.confirmDelete": false,
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "editor.suggest.insertMode": "replace",
+  "explorer.confirmDragAndDrop": false,
+  "editor.codeLensFontFamily": "'Operator Mono SSm Lig','cascadia code', Consolas, 'Courier New',monospace",
+  "editor.fontFamily": "'Fira Code','Operator Mono SSm Lig','cascadia code', Consolas, 'Courier New', monospace",
+  "editor.fontWeight": "600",
+  "editor.fontLigatures": true,
+  "workbench.startupEditor": "none",
+  "security.workspace.trust.untrustedFiles": "open",
+  "extensions.supportUntrustedWorkspaces": {},
+  "extensions.webWorker": true,
+  "better-comments.highlightPlainText": true,
+  "better-comments.multilineComments": true,
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#d3d3d3", // 99e0e0
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#ffff00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#ffff00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ],
+
+
+  //! Vim 🔥
+  "vim.commandLineModeKeyBindings": [],
+  "vim.cursorStylePerMode.normal": "underline",
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["p"],
+      "commands": ["editor.action.clipboardPasteAction"]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["k", "j"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.easymotion": true,
+  "vim.foldfix": true,
+  "vim.useSystemClipboard": true,
+  "vim.incsearch": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.sneak": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.view.explorer"]
+    },
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["workbench.files.action.focusFilesExplorer"],
+      "when": "editorTextFocus"
+
+    },
+   {
+      "before": ["<C-w>"],
+      "after": ["workbench.action.closeActiveEditor"],
+    },
+    {
+      "before": ["<leader>", "l"],
+      "after": ["$"]
+    },
+    {
+      "before": ["<leader>", "h"],
+      "after": ["0"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["v", "n"],
+      "after": ["v", "g", "_", "y"]
+    },
+    {
+      // find the source definition instead of the .d.ts file
+      // 'f'ind the source 'd'efinition
+      "before": ["f", "d"],
+      "commands": ["typescript.goToSourceDefinition"]
+    },
+    {
+      // df is easier to hit than gd
+      // go to the 'd'e'f'inition
+      "before": ["d", "f"],
+      "after": ["g", "d"]
+    },
+    {
+      "before": ["d", "n"],
+      "after": ["d", "g", "_"]
+    },
+    // Move selected lines while staying in visual mode
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+
+  ],
+  "vim.leader": "<space>",
+  "vim.cursorStylePerMode.replace": "block",
+  "vim.statusBarColorControl": true,
+  // "vim.timeout": 200,
+
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#240D37",
+    "statusBar.noFolderBackground": "#240D37",
+    "statusBar.debuggingBackground": "#240D37",
+    "editorError.foreground": "#ff0000",
+    "editorWarning.foreground": "#ffc400",
+    "statusBar.foreground": "#ffffff",
+    "statusBar.debuggingForeground": "#ffffff"
+  },
+  "vim.statusBarColors.insert": "#240D37",
+  "vim.startInInsertMode": true,
+  "vim.overrideCopy": false,
+
+  "advancedNewFile.convenienceOptions": ["last", "current", "root"],
+  "editor.suggestSelection": "first",
+  "files.exclude": {
+    "**/.class": true,
+    "**/.classpath": true,
+    "**/.exe": true,
+    "**/.factorypath": true,
+    "**/.gitignore": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/node_modules": true,
+    "**/package-lock.json": true,
+    // Hide js files agter running tsc.
+    "**/*.js": { "when": "$(basename).ts" }
+  },
+  "editor.mouseWheelZoom": true,
+  "files.defaultLanguage": " ${activeEditorLanguage}",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "window.title": "${dirty}${activeEditorMedium}${separator}",
+  "editor.cursorBlinking": "expand",
+  "git.ignoreRebaseWarning": true,
+  "terminal.integrated.fontFamily": "'MesloLGS NF', 'Fira Code'",
+  "cSpell.userWords": [
+    "Babblu",
+    "bcoz",
+    "Bhanu",
+    "Calibri",
+    "carasol",
+    "cpassword",
+    "Defination",
+    "Dombivli",
+    "Freelanster",
+    "Freelansters",
+    "Iphune",
+    "osama",
+    "pycryptodome",
+    "RESTAPI",
+    "Rollno",
+    "Shaikh",
+    "soln",
+    "Subarray",
+    "subarrays",
+    "Sunka",
+    "Swiper"
+  ],
+  "breadcrumbs.enabled": false,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+
+  // Enable this when u're working on a project with a team
+  "editor.codeLens": false,
+  // "terminal.integrated.gpuAcceleration": "on",
+  "workbench.productIconTheme": "fluent-icons",
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "gitlens.advanced.messages": {
+    "suppressLineUncommittedWarning": true
+  },
+  "editor.parameterHints.enabled": false,
+  // "editor.snippetSuggestions": "top",
+  "emmet.showSuggestionsAsSnippets": true,
+  "settingsSync.ignoredSettings": ["-emmet.extensionsPath"],
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "off",
+    "strings": true
+  },
+  "editor.suggest.snippetsPreventQuickSuggestions": true,
+  "editor.scrollbar.scrollByPage": true,
+  "editor.smoothScrolling": true,
+  "editor.scrollbar.horizontal": "visible",
+  "editor.scrollbar.vertical": "visible",
+  "editor.scrollbar.verticalScrollbarSize": 12,
+  "files.autoSave": "onFocusChange",
+  "editor.suggest.showUsers": false,
+  "cSpell.numSuggestions": 4,
+  "editor.quickSuggestionsDelay": 100,
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "workbench.sideBar.location": "right",
+  "editor.overviewRulerBorder": false,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "django-html": "html"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "liveServer.settings.donotVerifyTags": true,
+  "editor.linkedEditing": true,
+  "editor.minimap.autohide": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.tabCompletion": "on",
+  "editor.stickyScroll.enabled": true,
+  "editor.stickyTabStops": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "errorLens.enabledDiagnosticLevels": ["error", "warning"],
+  "errorLens.enableOnDiffView": true,
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "tailwindCSS.includeLanguages": {
+    "javascript": "javascript",
+    "html": "HTML"
+  },
+  "tailwindCSS.emmetCompletions": true, // remove this line if you don't use Emmet
+  "editor.inlineSuggest.enabled": true,
+  "color-highlight.languages": ["*"],
+  "color-highlight.matchWords": true,
+  "totalTypeScript.hideAllTips": false,
+  "totalTypeScript.hideBasicTips": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "tailwindCSS.rootFontSize": 10,
+  "typescript.format.enable": false,
+  "totalTypeScript.hiddenTips": [
+    "variable-type-annotation",
+    "array-type",
+    "basic-types",
+    "typing-function-parameters",
+    "any-type",
+    "ts-object-type",
+    "type-alias-declaration",
+    "union-type",
+    "undefined-keyword",
+    "passing-generics-to-types",
+    "record-utility-type",
+    "function-return-type",
+    "as-assertion",
+    "non-null-expression",
+    "typeof",
+    "returntype-utility-type",
+    "null-keyword",
+    "interface-declaration",
+    "tuple-type",
+    "optional-object-property"
+  ],
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "keyword.other.dotenv",
+        "settings": {
+          "foreground": "#FF000000"
+        }
+      }
+    ]
+  },
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "css.lint.unknownAtRules": "ignore",
+  "prettier.requireConfig": true,
+  "editor.tabSize": 2,
+  "eslint.format.enable": true,
+  "synthwave84.brightness": 0.59,
+  "editor.inlayHints.fontFamily": "'Fira Code'",
+  "errorLens.excludeBySource": [
+    "ts(18047)"
+  ],
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnType": true,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.useInlineCompletions": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorWidth": 3,
+  "terminal.integrated.cursorStyle": "line",
+  "workbench.editor.empty.hint": "hidden",
+  "window.titleBarStyle": "custom",
+  "workbench.colorTheme": "One Dark Pro",
+  "vscode_vibrancy.type": "acrylic",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.addMissingImports": "explicit"
+  },
+"eslint.validate": [
+  "javascript",
+  "javascriptreact",
+  "typescript",
+  "typescriptreact"
+],
+"aws.telemetry": false,
+"tailwind-fold.foldStyle": "QUOTES",
+"tailwind-fold.unfoldIfLineSelected": true,
+"tailwind-fold.showTailwindImage": false,
+"typescript.preferences.importModuleSpecifier": "non-relative",
+
+//* Background Image VSCODE 
+  // "background.enabled": true,
+  // "background.useFront": false,
+  // "background.style": {
+  //       "content": "''",
+  //       "pointer-events": "none",
+  //       "position": "absolute",
+  //       "z-index": "99999",
+  //       "width": "50%",
+  //       "height": "100%",
+  //       "margin-left":"65%",    // Make this 50 for shinchan
+  //       // "margin-top":"15%",     // And uncomment this
+  //       "background-position": "right",
+  //       "background-size": "cover",
+  //       "background-repeat": "no-repeat",
+  //       "opacity": 0.15
+  //   },
+  // "background.customImages": [
+  //   "https://i.imgur.com/o5FCDeV.png",        // Rajpal 
+  //   "https://i.imgur.com/eoHXSbG.png",        // Shinchan
+  //   "https://i.imgur.com/fXqaZOH.png",        // Raju
+  //   ],
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "/Users/bhanu/.vimrc",
+    "terminal.external.osxExec": "Warp.app",
+    "terminal.explorerKind": "external",
+    "terminal.integrated.env.osx": {
+      "FIG_NEW_SESSION": "1",
+      "CW_NEW_SESSION": "1"
+    },
+    "editor.accessibilitySupport": "off",
+    "terminal.integrated.fontSize": 14,
+    "window.zoomLevel": 1
+}
