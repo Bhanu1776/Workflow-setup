@@ -1,0 +1,150 @@
+{
+  "Console Log": {
+    "prefix": "cl",
+    "body": [
+      "console.log($1);"
+    ]
+  },
+
+  //* Most common react Hooks snippets
+  "React useState": {
+    "prefix": "us",
+    "body": [
+      "const [$1, set$2] = useState($3);"
+    ]
+  },
+  "React useEffect": {
+    "prefix": "ue",
+    "body": [
+      "useEffect(() => {",
+      "  $1",
+      "}, [$2]);"
+    ]
+  },
+  "React useCallback": {
+    "prefix": "ucb",
+    "body": [
+      "useCallback(() => {",
+      "  $1",
+      "}, [$2]);"
+    ]
+  },
+  "React useMemo": {
+    "prefix": "umm",
+    "body": [
+      "useMemo(() => {",
+      "  $1",
+      "}, [$2]);"
+    ]
+  },
+
+  //* React Functional component
+  "React Function Component": {
+    "key": "reactArrowFunctionExportComponent",
+    "prefix": "bhanu",
+    "body": [
+      "const ${1:${TM_FILENAME_BASE}} = () => {",
+      "  return (",
+      "    <div>",
+      "      <h1>${1:first}</h1>",
+      "    </div>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}"
+    ],
+    "description": "Creates a React Arrow Function Component with ES7 module system",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+
+  "React Function Component with Props": {
+    "key": "reactArrowFunctionExportComponent",
+    "prefix": "rafcep",
+    "body": [
+      "interface $1Props {}",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = ({}: $1Props) => {",
+      "  return (",
+      "    <div>",
+      "      <h1>${1:first}</h1>",
+      "    </div>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}"
+    ],
+    "description": "Creates a React Arrow Function Component with ES7 module system",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+
+  //* Asynchronous react functional component - useful for creating nextjs server components
+  "Async React Function Component": {
+    "prefix": "arafce",
+    "body": [
+      "const ${1:${TM_FILENAME_BASE}} = async () => {",
+      "  return (",
+      "    <div>",
+      "      <h1>${1:first}</h1>",
+      "    </div>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}"
+    ]
+  },
+  "Async React Function Component with Props": {
+    "prefix": "arafcep",
+    "body": [
+      "interface $1Props {}",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = async ({}: $1Props) => {",
+      "  return (",
+      "    <div>",
+      "      <h1>${1:first}</h1>",
+      "    </div>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}"
+    ]
+  },
+
+  //* Imports alias
+  "import": {
+    "key": "import",
+    "prefix": "imp",
+    "body": ["import ${2:second} from '${1:first}'"],
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "importDestructing": {
+    "key": "importDestructing",
+    "prefix": "imd",
+    "body": ["import { ${2:second} } from '${1:first}'"],
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+
+
+  //* Redux toolkit snippets
+  "reduxSlice": {
+    "key": "reduxSlice",
+    "prefix": "rxslice",
+    "body": [
+      "import { createSlice } from '@reduxjs/toolkit'",
+      "",
+      "const initialState = {",
+      "  ${3}",
+      "}",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = createSlice({",
+      "  name: '${2:second}',",
+      "  initialState,",
+      "  reducers: {}",
+      "});",
+      "",
+      "export const {} = ${1:${TM_FILENAME_BASE}}.actions",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}.reducer"
+    ],
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+}
