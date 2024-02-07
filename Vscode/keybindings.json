@@ -55,7 +55,7 @@
     "command": "workbench.action.terminal.newInActiveWorkspace"
   },
   {
-    "key": "ctrl+enter",
+    "key": "cmd+`",
     "command": "workbench.action.terminal.toggleTerminal"
   },
   {
@@ -102,27 +102,20 @@
 
   // TODO: Traverse search results with vim
   {
-    "key": "cmd+j",
-    "command": "search.action.focusNextSearchResult",
-    "when": "hasSearchResult && workbench.view.search.visible"
-  },
-
-  // TODO: Select file from explorer.
-  {
     "key": "cmd+enter",
     "command": "filesExplorer.openFilePreserveFocus",
     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder && !inputFocus"
+  },
+  {
+    "command": "workbench.files.action.focusFilesExplorer",
+    "key": "cmd+e",
+    "when": "editorTextFocus"
   },
 
   //* FILE TREE
   {
     "command": "workbench.action.toggleSidebarVisibility",
     "key": "ctrl+e"
-  },
-  {
-    "command": "workbench.files.action.focusFilesExplorer",
-    "key": "ctrl+e",
-    "when": "editorTextFocus"
   },
   {
     "key": "n",
@@ -138,11 +131,6 @@
     "key": "shift+n",
     "command": "explorer.newFolder",
     "when": "explorerViewletFocus"
-  },
-  {
-    "key": "shift+n",
-    "command": "workbench.action.newWindow",
-    "when": "!explorerViewletFocus"
   },
   {
     "command": "deleteFile",
@@ -192,5 +180,116 @@
   {
     "key": "shift+alt+c",
     "command": "aws.AmazonQChatView.focus"
+  },
+  {
+    "key": "shift+cmd+l",
+    "command": "turboConsoleLog.displayLogMessage"
+  },
+  {
+    "key": "ctrl+alt+l",
+    "command": "-turboConsoleLog.displayLogMessage"
+  },
+  {
+  "key": "cmd+l",
+  "command": "editor.action.insertSnippet",
+  "when": "editorTextFocus",
+  "args": {
+    "langId": "javascriptreact",
+    "name": "Print to console"
   }
+},
+{
+  "key": "ctrl+shift+j",
+  "command": "workbench.action.terminal.focusPrevious",
+  "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+},
+{
+  "key": "shift+cmd+[",
+  "command": "-workbench.action.terminal.focusPrevious",
+  "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+},
+{
+  "key": "ctrl+shift+k",
+  "command": "workbench.action.terminal.focusNext",
+  "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+},
+{
+  "key": "shift+cmd+]",
+  "command": "-workbench.action.terminal.focusNext",
+  "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+},
+{
+  "key": "cmd+t",
+  "command": "-workbench.action.showAllSymbols"
+},
+{
+  "key": "cmd+t",
+  "command": "workbench.action.quickOpen"
+},
+{
+  "key": "cmd+p",
+  "command": "-workbench.action.quickOpen"
+},
+{
+  "key": "cmd+p",
+  "command": "workbench.action.showCommands"
+},
+{
+  "key": "shift+cmd+p",
+  "command": "-workbench.action.showCommands"
+},
+{
+  "key": "cmd+e",
+  "command": "-actions.findWithSelection"
+},
+{
+  "key": "shift+cmd+g",
+  "command": "workbench.view.scm",
+  "when": "workbench.scm.active"
+},
+{
+  "key": "ctrl+shift+g",
+  "command": "-workbench.view.scm",
+  "when": "workbench.scm.active"
+},
+{
+  "key": "shift+cmd+g",
+  "command": "workbench.view.scm",
+  "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+},
+{
+  "key": "ctrl+shift+g",
+  "command": "-workbench.view.scm",
+  "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+},
+{
+  "key": "ctrl+shift+g",
+  "command": "editor.action.previousMatchFindAction",
+  "when": "editorFocus"
+},
+{
+  "key": "shift+cmd+g",
+  "command": "-editor.action.previousMatchFindAction",
+  "when": "editorFocus"
+},
+{
+  "key": "ctrl+shift+g",
+  "command": "workbench.action.terminal.findPrevious",
+  "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocusInAny && terminalHasBeenCreated || terminalFocusInAny && terminalProcessSupported"
+},
+{
+  "key": "shift+cmd+g",
+  "command": "-workbench.action.terminal.findPrevious",
+  "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocusInAny && terminalHasBeenCreated || terminalFocusInAny && terminalProcessSupported"
+},
+{
+  "key": "ctrl+shift+g",
+  "command": "workbench.action.terminal.openDetectedLink",
+  "when": "accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal'"
+},
+{
+  "key": "shift+cmd+g",
+  "command": "-workbench.action.terminal.openDetectedLink",
+  "when": "accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal'"
+}
 ]
