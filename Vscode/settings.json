@@ -1,6 +1,6 @@
 {
   "vscode_custom_css.imports": [
-    "file:///Users/bhanu/.vscode/extensions/bhanu1776.jellyfish-retro-0.1.1/themes/Extras/JellyFish-x-NoAnim.css"
+    // "file:///Users/bhanu/.vscode/extensions/bhanu1776.jellyfish-retro-0.1.1/themes/Extras/JellyFish-x-NoAnim.css"
   ],
   "editor.fontSize": 15,
   // "editor.rulers": [{"column":48, "color": "#73676e3c"}],
@@ -10,8 +10,8 @@
   "git.confirmSync": false,
   "editor.suggest.insertMode": "replace",
   "explorer.confirmDragAndDrop": false,
-  "editor.codeLensFontFamily": "'Operator Mono SSm Lig','cascadia code', Consolas, 'Courier New',monospace",
-  "editor.fontFamily": "'Fira Code','Operator Mono SSm Lig','cascadia code', Consolas, 'Courier New', monospace",
+  "editor.codeLensFontFamily": "'Dank Mono','Operator Mono SSm Lig','cascadia code', Consolas, 'Courier New',monospace",
+  "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Dank Mono', 'Fira Code','Operator Mono SSm Lig','cascadia code', Consolas, 'Courier New', monospace",
   "editor.fontWeight": "600",
   "editor.fontLigatures": true,
   "workbench.startupEditor": "none",
@@ -95,10 +95,50 @@
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
   "vim.sneak": true,
+  "vim.highlightedyank.color": "rgba(230, 97, 89, 0.7)",
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.textColor": "white",
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["<leader>", "d"],
       "after": ["d", "d"]
+    },
+    {
+      "before": [
+        "[",
+        "d"
+      ],
+      "commands": [
+        "editor.action.marker.prev"
+      ]
+    },
+    {
+      "before": [
+        "]",
+        "d"
+      ],
+      "commands": [
+        "editor.action.marker.next"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "c",
+        "a"
+      ],
+      "commands": [
+        "editor.action.quickFix"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "i"
+      ],
+      "commands": [
+        "extension.toggleBool"
+      ]
     },
     {
       "before": ["<C-n>"],
@@ -163,13 +203,18 @@
   // "vim.timeout": 200,
 
   "workbench.colorCustomizations": {
+    "editorSuggestWidget.selectedBackground": "#231739",
+    "sideBar.background": "#140E1A",
+    "list.activeSelectionBackground": "#231739",
+    "list.inactiveSelectionBackground": "#231739",
+    "list.focusBackground": "#231739",
+    "list.hoverBackground": "#231739",
     "statusBar.background": "#240D37",
     "statusBar.noFolderBackground": "#240D37",
     "statusBar.debuggingBackground": "#240D37",
-    "editorError.foreground": "#ff0000",
-    "editorWarning.foreground": "#ffc400",
     "statusBar.foreground": "#ffffff",
-    "statusBar.debuggingForeground": "#ffffff"
+    "statusBar.debuggingForeground": "#ffffff",
+    "terminalCursor.foreground": "#af46ec"
   },
   "vim.statusBarColors.insert": "#240D37",
   "vim.startInInsertMode": true,
@@ -196,7 +241,7 @@
   "window.title": "${dirty}${activeEditorMedium}${separator}",
   "editor.cursorBlinking": "expand",
   "git.ignoreRebaseWarning": true,
-  "terminal.integrated.fontFamily": "'MesloLGS NF', 'Fira Code'",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font, MesloLGS NF , Fira Code",
   "cSpell.userWords": [
     "Babblu",
     "bcoz",
@@ -209,10 +254,13 @@
     "Freelanster",
     "Freelansters",
     "Iphune",
+    "omnisender",
     "osama",
+    "Parassolutions",
     "pycryptodome",
     "RESTAPI",
     "Rollno",
+    "Shadcn",
     "Shaikh",
     "soln",
     "Subarray",
@@ -264,7 +312,7 @@
   },
   "javascript.updateImportsOnFileMove.enabled": "always",
   "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "liveServer.settings.donotVerifyTags": true,
   "editor.linkedEditing": true,
@@ -351,7 +399,6 @@
   "prettier.requireConfig": true,
   "editor.tabSize": 2,
   "eslint.format.enable": true,
-  "synthwave84.brightness": 0.59,
   "editor.inlayHints.fontFamily": "'Fira Code'",
   "errorLens.excludeBySource": [
     "ts(18047)"
@@ -368,12 +415,13 @@
   "editor.cursorWidth": 3,
   "terminal.integrated.cursorStyle": "line",
   "workbench.editor.empty.hint": "hidden",
-  "window.titleBarStyle": "custom",
-  "workbench.colorTheme": "One Dark Pro",
+  // "window.titleBarStyle": "custom",
+  "workbench.colorTheme": "Aura Dracula Spirit",
   "vscode_vibrancy.type": "acrylic",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
-    "source.addMissingImports": "explicit"
+    "source.addMissingImports": "explicit",
+    "source.organizeImports": "explicit"
   },
 "eslint.validate": [
   "javascript",
@@ -388,7 +436,7 @@
 "typescript.preferences.importModuleSpecifier": "non-relative",
 
 //* Background Image VSCODE 
-  // "background.enabled": true,
+  "background.enabled": true,
   // "background.useFront": false,
   // "background.style": {
   //       "content": "''",
@@ -403,7 +451,7 @@
   //       "background-size": "cover",
   //       "background-repeat": "no-repeat",
   //       "opacity": 0.15
-  //   },
+  //   }
   // "background.customImages": [
   //   "https://i.imgur.com/o5FCDeV.png",        // Rajpal 
   //   "https://i.imgur.com/eoHXSbG.png",        // Shinchan
@@ -419,5 +467,70 @@
     },
     "editor.accessibilitySupport": "off",
     "terminal.integrated.fontSize": 14,
-    "window.zoomLevel": 1
+    "tailwind-fold.autoFold": false,
+    "extensions.ignoreRecommendations": true,
+    "window.zoomLevel": 1,
+
+    //* New stuff
+    "workbench.editor.showTabs": "multiple",
+    "workbench.layoutControl.enabled": false,
+    "workbench.tips.enabled": false,
+    "editor.minimap.renderCharacters": false,
+    "editor.renderLineHighlight": "none",
+    "editor.lineHeight": 2.2,
+    "editor.lightbulb.enabled": "off",
+    "explorer.compactFolders": false,
+    "files.insertFinalNewline": true,
+    "terminal.integrated.tabs.enabled": false,
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.lineHeight": 1.5,
+    "window.titleBarStyle": "native",
+    "apc.electron": {
+      "titleBarStyle": "hiddenInset",
+      "opacity": 0.9
+    },
+    "window.commandCenter": false,
+    "apc.font.family": "Dank Mono",
+    "apc.header": {
+      "height": 40
+    },
+    "apc.sidebar.titlebar": {
+      "height": 30,
+      "fontSize": 12
+    },
+    "apc.listRow": {
+      "lists": [
+        "explorer-folders-view",
+        "quick-input-list",
+        "results"
+      ],
+      "height": 30,
+  },
+    "apc.stylesheet": {
+    ".title-actions": "display: none !important",
+    ".quick-input-widget.show-file-icons, .editor-widget.find-widget": "box-shadow: none !important",
+    ".filematch .monaco-icon-label:before, .custom-list-row.results .monaco-list-row .monaco-icon-label:before": "background-position: 0 bottom !important",
+    ".filematch .monaco-count-badge": "padding: 5px 6px 0 6px !important",
+    ".sidebar .title-label": "padding: 0 !important",
+    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
+    ".sidebar": "border: none !important",
+    ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, #67D0FF 10%, #C45DFF 100%)",
+    ".quick-input-list-row div": "display: flex !important; align-items: center !important",
+    ".panel .composite.title": "visibility: hidden !important",
+    ".title.show-file-icons .label-container .monaco-icon-label.file-icon": "padding-bottom: 6px !important",
+    ".sidebar .title-label h2": "line-height: 2.8 !important",
+    ".monaco-editor .scroll-decoration": "display: none !important",
+    ".monaco-scrollable-element > .shadow.top": "display: none !important",
+    ".monaco-workbench .part.panel.bottom .composite.title": "height: 5px !important",
+    // ".split-view-view .visible": "padding-top: 5px !important",
+    // ".monaco-split-view2 > .monaco-scrollable-element > .split-view-container": "background: #191521 !important",
+  },
+  "animations.Install-Method": "Apc Customize UI++",
+  "apc.imports": [
+    "file:///Users/bhanu/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.1/dist/updateHandler.js",
+    "file:///Users/bhanu/.vscode/extensions/bhanu1776.jellyfish-retro-0.1.1/themes/Extras/JellyFish-x-NoAnim.css"
+  ],
+  "animations.CursorAnimationOptions": {
+    "Color": "#C45DFF"
+  },
 }
