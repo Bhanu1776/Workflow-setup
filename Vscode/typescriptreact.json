@@ -41,7 +41,7 @@
   //* React Functional component
   "React Function Component": {
     "key": "reactArrowFunctionExportComponent",
-    "prefix": "bhanu",
+    "prefix": "rafce",
     "body": [
       "const ${1:${TM_FILENAME_BASE}} = () => {",
       "  return (",
