@@ -1,0 +1,21 @@
+{
+  "description": "Option + Tab to switch Previous desktop",
+  "manipulators": [
+    {
+      "description": "Option + Tab to switch desktops",
+      "from": {
+        "key_code": "tab",
+        "modifiers": {
+          "mandatory": ["left_option"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "right_arrow",
+          "modifiers": ["left_control"]
+        }
+      ],
+      "type": "basic"
+    }
+  ]
+}
