@@ -1,0 +1,173 @@
+{
+  "description": "Launch apps by right option+letters.",
+  "manipulators": [
+    {
+      "from": {
+        "key_code": "s",
+        "modifiers": {
+          "mandatory": ["right_option"]
+        }
+      },
+      "to": [
+        {
+          "shell_command": "open '/Applications/Safari.app'"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "t",
+        "modifiers": {
+          "mandatory": ["right_option"]
+        }
+      },
+      "to": [
+        {
+          "shell_command": "open '/Applications/Warp.app'"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "m",
+        "modifiers": {
+          "mandatory": ["right_option"]
+        }
+      },
+      "to": [
+        {
+          "shell_command": "open -a Music.app"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "f",
+        "modifiers": {
+          "mandatory": ["right_option"]
+        }
+      },
+      "to": [
+        {
+          "shell_command": "open ~"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "v",
+        "modifiers": {
+          "mandatory": ["right_option"]
+        }
+      },
+      "to": [
+        {
+          "shell_command": "open '/Applications/Visual Studio Code.app'"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "e",
+        "modifiers": {
+          "mandatory": ["right_option"]
+        }
+      },
+      "to": [
+        {
+          "shell_command": "open ~/Downloads/"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "a",
+        "modifiers": {
+          "mandatory": ["right_option"]
+        }
+      },
+      "to": [
+        {
+          "shell_command": "open '/Applications/Arc.app'"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "i",
+        "modifiers": {
+          "mandatory": ["right_option"]
+        }
+      },
+      "to": [
+        {
+          "shell_command": "open '/Applications/Spotify.app'"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "w",
+        "modifiers": {
+          "mandatory": ["right_option"]
+        }
+      },
+      "to": [
+        {
+          "shell_command": "open '/Applications/Whatsapp.app'"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "c",
+        "modifiers": {
+          "mandatory": ["right_option"]
+        }
+      },
+      "to": [
+        {
+          "shell_command": "open '/Applications/CleanMyMac X.app'"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "g",
+        "modifiers": {
+          "mandatory": ["right_option"]
+        }
+      },
+      "to": [
+        {
+          "shell_command": "open -a 'Arc' --args --disable-web-security --user-data-dir='/tmp/arc-disable-web-security'"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "p",
+        "modifiers": {
+          "mandatory": ["right_option"]
+        }
+      },
+      "to": [
+        {
+          "shell_command": "open '/Applications/Presentify.app'"
+        }
+      ],
+      "type": "basic"
+    }
+  ]
+}
