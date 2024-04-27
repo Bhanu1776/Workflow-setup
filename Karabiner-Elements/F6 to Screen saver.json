@@ -1,0 +1,16 @@
+{
+  "description": "F6 to Screen saver",
+  "manipulators": [
+    {
+      "from": {
+        "key_code": "f6"
+      },
+      "to": [
+        {
+          "shell_command": "open -a ScreenSaverEngine.app"
+        }
+      ],
+      "type": "basic"
+    }
+  ]
+}
