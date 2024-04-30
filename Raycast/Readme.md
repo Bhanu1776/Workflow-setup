@@ -8,4 +8,4 @@ Here's my [Config file]("https://github.com/Bhanu1776/Workflow-setup/blob/master
 
 - [Raycast’s Top Extensions for Mac Power Users! 🔥](https://medium.com/@bhanu1776/raycasts-top-extensions-for-mac-power-users-31008579b2bd)
 
-- [Raycast's Top Extensions for Developers! 👨‍💻](https://medium.com/@bhanu1776/raycasts-top-extensions-for-mac-power-users-31008579b2bd)
+- [Raycast's Top Extensions for Developers! 👨‍💻](https://medium.com/p/651a44e639f4)
