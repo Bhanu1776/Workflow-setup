@@ -127,11 +127,11 @@
     "key": "r",
     "when": "filesExplorerFocus && !inputFocus"
   },
-  {
-    "key": "shift+n",
-    "command": "explorer.newFolder",
-    "when": "explorerViewletFocus"
-  },
+  // {
+  //   "key": "shift+n",
+  //   "command": "explorer.newFolder",
+  //   "when": "explorerViewletFocus"
+  // },
   {
     "command": "deleteFile",
     "key": "d",
@@ -195,7 +195,7 @@
   "when": "editorTextFocus",
   "args": {
     "langId": "javascriptreact",
-    "name": "Print to console"
+    "name": "Console Log"
   }
 },
 {
@@ -291,5 +291,60 @@
   "key": "shift+cmd+g",
   "command": "-workbench.action.terminal.openDetectedLink",
   "when": "accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal'"
+},
+{
+  "key": "alt+cmd+2",
+  "command": "workbench.action.splitEditorToNextGroup"
+},
+{
+  "key": "alt+cmd+1",
+  "command": "workbench.action.splitEditorToLeftGroup"
+},
+{
+  "key": "alt+cmd+a",
+  "command": "tailwind-fold.toggleAutoFold"
+},
+{
+  "key": "ctrl+alt+a",
+  "command": "-tailwind-fold.toggleAutoFold"
+},
+{
+  "key": "cmd+i",
+  "command": "-inlineChat.startWithCurrentLine",
+  "when": "inlineChatHasProvider && inlineChatShowingHint && !editorReadonly && !inlineChatVisible"
+},
+{
+  "key": "cmd+i",
+  "command": "-inlineChat.start",
+  "when": "editorFocus && inlineChatHasProvider && inlineChatPossible && !editorReadonly && !editorSimpleInput"
+},
+{
+  "key": "cmd+i",
+  "command": "-codeium.openCodeiumCommand",
+  "when": "codeium.commandEnabled && editorTextFocus && !inlineSuggestionsVisible"
+},
+{
+  "key": "cmd+i",
+  "command": "-focusSuggestion",
+  "when": "suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+},
+{
+  "key": "cmd+i",
+  "command": "-inlineChat.holdForSpeech",
+  "when": "hasSpeechProvider && inlineChatHasProvider && inlineChatVisible && textInputFocus"
+},
+{
+  "key": "cmd+i",
+  "command": "-toggleSuggestionDetails",
+  "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+},
+{
+  "key": "cmd+i",
+  "command": "-editor.action.triggerSuggest",
+  "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+},
+{
+  "key": "cmd+i",
+  "command": "inlineChat.start"
 }
 ]
