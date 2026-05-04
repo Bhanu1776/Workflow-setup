@@ -68,7 +68,7 @@
     "when": "terminalFocus && terminalProcessSupported"
   },
   {
-    "key": "ctrl+k",
+    "key": "ctrl+shift+k",
     "command": "workbench.action.terminal.focusNextPane",
     "when": "terminalFocus && terminalProcessSupported"
   },
@@ -78,7 +78,7 @@
     "when": "terminalFocus && terminalProcessSupported"
   },
   {
-    "key": "ctrl+j",
+    "key": "ctrl+shift+j",
     "command": "workbench.action.terminal.focusPreviousPane",
     "when": "terminalFocus && terminalProcessSupported"
   },
@@ -106,11 +106,11 @@
     "command": "filesExplorer.openFilePreserveFocus",
     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder && !inputFocus"
   },
-  {
-    "command": "workbench.files.action.focusFilesExplorer",
-    "key": "cmd+e",
-    "when": "editorTextFocus"
-  },
+  // {
+  //   "command": "workbench.files.action.focusFilesExplorer",
+  //   "key": "cmd+e",
+  //   "when": "editorTextFocus"
+  // },
 
   //* FILE TREE
   {
@@ -146,7 +146,7 @@
       "key": "cmd+shift+-","command": "undo_expand_region", "when": "editorTextFocus && editorHasSelection"
   },
   {
-    "key": "cmd+n",
+    "key": "shift+cmd+n",
     "command": "extension.advancedNewFile"
   },
   {
@@ -173,21 +173,13 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "shift+alt+down",
+    "key": "shift+alt+up",
     "command": "-editor.action.copyLinesDownAction",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "shift+alt+c",
-    "command": "aws.AmazonQChatView.focus"
-  },
-  {
     "key": "shift+cmd+l",
     "command": "turboConsoleLog.displayLogMessage"
-  },
-  {
-    "key": "ctrl+alt+l",
-    "command": "-turboConsoleLog.displayLogMessage"
   },
   {
   "key": "cmd+l",
@@ -199,17 +191,7 @@
   }
 },
 {
-  "key": "ctrl+shift+j",
-  "command": "workbench.action.terminal.focusPrevious",
-  "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
-},
-{
-  "key": "shift+cmd+[",
-  "command": "-workbench.action.terminal.focusPrevious",
-  "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
-},
-{
-  "key": "ctrl+shift+k",
+  "key": "ctrl+k",
   "command": "workbench.action.terminal.focusNext",
   "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
 },
@@ -344,7 +326,91 @@
   "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
 },
 {
-  "key": "cmd+i",
-  "command": "inlineChat.start"
+  "key": "shift+cmd+v",
+  "command": "-quicktype.pasteJSONAsTypesAndSerialization",
+  "when": "editorTextFocus && editorLangId != 'markdown'"
+},
+{
+  "key": "shift+cmd+v",
+  "command": "quicktype.openForJSON",
+  "when": "editorTextFocus && editorLangId != 'markdown'"
+},
+{
+  "key": "shift+cmd+n",
+  "command": "-workbench.action.newWindow"
+},
+{
+  "key": "cmd+n",
+  "command": "composer.createNew",
+  "when": "composerFocused || focusedView =~ /^workbench.panel.aichat.view/"
+},
+{
+  "key": "cmd+n",
+  "command": "-composer.createNew",
+  "when": "composerFocused || focusedView =~ /^workbench.panel.aichat.view/"
+},
+{
+  "key": "shift+cmd+k",
+  "command": "-editor.action.deleteLines",
+  "when": "textInputFocus && !editorReadonly"
+},
+{
+  "key": "shift+cmd+k",
+  "command": "aipopup.action.modal.generate",
+  "when": "editorFocus && !composerBarIsVisible"
+},
+{
+  "key": "shift+cmd+k",
+  "command": "-aipopup.action.modal.generate",
+  "when": "editorFocus && !composerBarIsVisible"
+},
+{
+  "key": "shift+cmd+j",
+  "command": "aiSettings.action.open",
+  "when": "!isSettingsPaneOpen"
+},
+{
+  "key": "shift+cmd+j",
+  "command": "-aiSettings.action.open",
+  "when": "!isSettingsPaneOpen"
+},
+{
+  "key": "shift+cmd+k",
+  "command": "cursorai.action.generateInTerminal",
+  "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+},
+{
+  "key": "cmd+k",
+  "command": "-cursorai.action.generateInTerminal",
+  "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+},
+{
+  "key": "cmd+l",
+  "command": "-aichat.newchataction"
+},
+{
+  "key": "cmd+k",
+  "command": "-workbench.action.terminal.clear",
+  "when": "terminalFocus && terminalHasBeenCreated && !accessibilityModeEnabled || terminalFocus && terminalProcessSupported && !accessibilityModeEnabled || accessibilityModeEnabled && accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewIsShown && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
+},
+{
+  "key": "ctrl+j",
+  "command": "-editor.action.joinLines",
+  "when": "editorTextFocus && !editorReadonly"
+},
+{
+  "key": "ctrl+j",
+  "command": "workbench.action.terminal.focusPrevious",
+  "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+},
+{
+  "key": "shift+cmd+[",
+  "command": "-workbench.action.terminal.focusPrevious",
+  "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+},
+{
+  "key": "cmd+.",
+  "command": "-docs.write",
+  "when": "editorTextFocus && config.docwriter.hotkey.mac == '⌘ + .' && editorLangId =~ /typescript|javascript|python|php|java|c|cpp|csharp|dart|ruby|go|rust/"
 }
 ]
